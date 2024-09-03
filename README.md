@@ -1,40 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Featuring FE Onboarding 1
 
-## Getting Started
+## 🔍 목표
 
-First, run the development server:
+Ring Design System을 사용하는 방법과 API를 효율적으로 관리하는 방법을 익힙니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📮 미션 제출 방법
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브랜치 생성 후 브랜치에 코드를 작성하고, 브랜치를 푸시한 후 PR을니 생성합니다.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 🚀 기능 요구 사항
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [ ] 디자인 [Figma 링크](https://www.figma.com/design/VHEECEVJglf3EXhbH1wEmD/FE-Intern_%EA%B3%BC%EC%A0%9C?node-id=0-1&t=IHX8JDnDc2xgBKkB-1) 참고
+- [ ] API 엔드포인트 [Swagger 링크]() 참고
+- [ ] `GET /api/v1/feature` API를 호출하여 데이터를 가져옵다.
+- [ ] `Sidebar` 컴포넌트를 구성합니다.
+- [ ] `Modal` 컴포넌트를 구성합니다.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 🎯 프로그래밍 요구 사항
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 필수 요구사항
 
-## Learn More
+- 라이브러리는 `Ring Design System`을 사용합니다.
+- CSS는 `vanilla-extract`를 사용합니다.
+- `Axios`를 사용하여 API를 호출합니다.
+- 서버 상태 관리는 `tanstack-query`를 사용합니다.
+- 폴더 구조는 [폴더 구조 문서]()를 참고합니다.
+- 그 외 컨벤션은 [컨벤션 문서](https://featuring-corp.atlassian.net/wiki/spaces/Frontend/pages/290455899)를 참고합니다.
 
-To learn more about Next.js, take a look at the following resources:
+### 선택 요구사항
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 자주사용하는 vanilla-extract의 스타일을 `utils`로 분리합니다. (선택)
+- `orval`을 사용하여 API를 효율적으로 관리합니다. (선택)
+- 단위테스트를 `Jest`를 사용하여 구현합니다. (선택)
+- `Adapter` 패턴을 사용하여 UI로직과 비즈니스 로직을 분리합니다. (선택)
+- `react-hook-form`을 사용하여 Form을 구현합니다. (선택)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ✏️ 과제 진행 요구 사항
 
-## Deploy on Vercel
+최종 제출 시 자신이 생각했던 모든 것들에 대한 README.md 작성이 필요합니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 참고 자료
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Ring Design System Storybook](http://front-core.dataeffect.ai/)
