@@ -6,13 +6,13 @@ Ring Design System을 사용하는 방법과 API를 효율적으로 관리하는
 
 ## 📮 미션 제출 방법
 
-브랜치 생성 후 브랜치에 코드를 작성하고, 브랜치를 푸시한 후 PR을니 생성합니다.
+브랜치 생성 후 브랜치에 코드를 작성하고, 브랜치를 푸시한 후 PR을 생성합니다.
 
 ## 🚀 기능 요구 사항
 
 - [ ] 디자인 [Figma 링크](https://www.figma.com/design/VHEECEVJglf3EXhbH1wEmD/FE-Intern_%EA%B3%BC%EC%A0%9C?node-id=0-1&t=IHX8JDnDc2xgBKkB-1) 참고
 - [ ] API 엔드포인트 [Swagger 링크]() 참고
-- [ ] `GET /api/v1/feature` API를 호출하여 데이터를 가져옵다.
+- [ ] `GET /api/v1/feature` API를 호출하여 데이터를 가져옵니다.
 - [ ] `Sidebar` 컴포넌트를 구성합니다.
 - [ ] `Modal` 컴포넌트를 구성합니다.
 

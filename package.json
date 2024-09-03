@@ -1,24 +1,31 @@
 {
-  "name": "featuring-front-onboarding-1",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.7"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.7"
-  }
+	"name": "featuring-front-onboarding-1",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@featuring-corp/components": "^0.0.101",
+		"@featuring-corp/design-tokens": "^0.0.12",
+		"next": "14.2.7",
+		"react": "^18",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"@tanstack/eslint-plugin-query": "^5.53.0",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@vanilla-extract/next-plugin": "^2.4.5",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.7",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "^2.30.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5"
+	}
 }
