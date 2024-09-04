@@ -8,6 +8,28 @@ Ring Design System을 사용하는 방법과 API를 효율적으로 관리하는
 
 브랜치 생성 후 브랜치에 코드를 작성하고, 브랜치를 푸시한 후 PR을 생성합니다.
 
+## 📌 폴더 구조
+
+```bash
+src
+├── features
+│   ├── {Feature}
+│   │   ├── {Feature}.tsx
+│   │   └── {Feature}.css.ts
+├── lib
+│   ├── swagger.ts // Swagger 정의 폴더
+├── pages
+│   ├── api // Next API 폴더
+│   │   ├── doc.ts // API openapi 문서
+│   │   ├── {Api}.ts
+│   ├── api-doc // Swagger API 문서
+│   │   ├── index.tsx
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   ├── index.tsx
+├── styles // vanilla-extract 스타일 폴더
+```
+
 ## 🚀 기능 요구 사항
 
 - [ ] 디자인 [Figma 링크](https://www.figma.com/design/VHEECEVJglf3EXhbH1wEmD/FE-Intern_%EA%B3%BC%EC%A0%9C?node-id=0-1&t=IHX8JDnDc2xgBKkB-1) 참고
@@ -15,6 +37,7 @@ Ring Design System을 사용하는 방법과 API를 효율적으로 관리하는
 - [ ] `GET /api/v1/feature` API를 호출하여 데이터를 가져옵니다.
 - [ ] `Sidebar` 컴포넌트를 구성합니다.
 - [ ] `Modal` 컴포넌트를 구성합니다.
+- [ ] 추가적으로 필요한 컴포넌트를 구성합니다.
 
 ## 🎯 프로그래밍 요구 사항
 
@@ -31,6 +54,7 @@ Ring Design System을 사용하는 방법과 API를 효율적으로 관리하는
 
 - 자주사용하는 vanilla-extract의 스타일을 `utils`로 분리합니다. (선택)
 - `orval`을 사용하여 API를 효율적으로 관리합니다. (선택)
+  - [openapi 문서]()를 사용합니다
 - 단위테스트를 `Jest`를 사용하여 구현합니다. (선택)
 - `Adapter` 패턴을 사용하여 UI로직과 비즈니스 로직을 분리합니다. (선택)
 - `react-hook-form`을 사용하여 Form을 구현합니다. (선택)
