@@ -2,8 +2,9 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import dynamic from 'next/dynamic';
 import { createSwaggerSpec } from 'next-swagger-doc';
 
+import swaggerSpec from '@root/next-swagger-doc.json';
+
 import 'swagger-ui-react/swagger-ui.css';
-import { apiDocSpec } from '@/lib/swagger';
 
 const SwaggerUI = dynamic<{
 	spec?: any;
@@ -14,9 +15,7 @@ function ApiDoc({ spec }: InferGetStaticPropsType<typeof getStaticProps>) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const spec: Record<string, any> = createSwaggerSpec({
-		...apiDocSpec,
-	});
+	const spec: Record<string, any> = createSwaggerSpec({ ...swaggerSpec });
 
 	return {
 		props: {

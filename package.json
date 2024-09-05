@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build-swagger": "next-swagger-doc-cli next-swagger-doc.json",
+		"build": "yarn build-swagger && next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
