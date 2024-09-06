@@ -11,9 +11,12 @@
 	"dependencies": {
 		"@featuring-corp/components": "^0.0.101",
 		"@featuring-corp/design-tokens": "^0.0.12",
+		"@tanstack/react-query": "^5.54.1",
+		"axios": "^1.7.7",
 		"next": "14.2.7",
 		"react": "^18",
-		"react-dom": "^18"
+		"react-dom": "^18",
+		"swiper": "^11.1.12"
 	},
 	"devDependencies": {
 		"@tanstack/eslint-plugin-query": "^5.53.0",

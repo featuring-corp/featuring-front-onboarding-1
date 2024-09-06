@@ -33,7 +33,6 @@ export default function Home() {
 
 			<div className={S.mainContainer}>
 				<div className={S.header}>대시보드</div>
-				<h3 className={S.title}>최근 조회한 인플루언서</h3>
 				<InfluencerCardDisplay />
 
 				<h3 className={S.title}> 나의 이용 현황</h3>
