@@ -16,6 +16,9 @@
 # production
 /build
 
+# swagger build
+swagger.json
+
 # misc
 .DS_Store
 *.pem

@@ -6,6 +6,28 @@
 		"plugin:@tanstack/eslint-plugin-query/recommended"
 	],
 	"plugins": ["react", "@tanstack/query"],
+	"overrides": [
+		{
+			// Force the setting of a swagger description on each api endpoint
+			"files": ["src/pages/api/**/*.ts"],
+			"excludedFiles": ["src/pages/api/doc.ts"],
+			"plugins": ["jsdoc"],
+			"rules": {
+				"jsdoc/no-missing-syntax": [
+					"error",
+					{
+						"contexts": [
+							{
+								"comment": "JsdocBlock:has(JsdocTag[tag=swagger])",
+								"context": "any",
+								"message": "@swagger documentation is required on each API. Check this out for syntax info: https://github.com/jellydn/next-swagger-doc"
+							}
+						]
+					}
+				]
+			}
+		}
+	],
 	"rules": {
 		"import/order": [
 			"warn",
